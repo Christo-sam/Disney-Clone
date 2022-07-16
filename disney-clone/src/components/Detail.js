@@ -129,7 +129,7 @@ const Player = styled.button`
   letter-spacing: 1.8px;
   text-align: center;
   text-transform: uppercase;
-  background: rgb (249, 249, 249);
+  background: rgb(249, 249, 249);
   border: none;
   color: rgb(0, 0, 0);
 
