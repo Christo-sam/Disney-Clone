@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectTrending } from "../features/movie/movieSlice";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Trending = () => {
     const movies = useSelector(selectTrending);
@@ -16,7 +18,7 @@ const Trending = () => {
                             <Wrap key={key}>
                                 {movie.id}
                                 <Link to={`/detail/` + movie.id}>
-                                    <img src={movie.cardImg} alt={movie.title} />
+                                    <LazyLoadImage src={movie.cardImg} alt={movie.title} effect="blur"/>
                                 </Link>
                             </Wrap>
                         )
