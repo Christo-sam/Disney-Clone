@@ -19,7 +19,9 @@ const Recommends = () => {
                                 {movie.id}
                                 <Link to={`/detail/` + movie.id}>
                                     <LazyLoadImage src={movie.cardImg} alt={movie.title} 
-                                    effect="blur" />
+                                    effect="blur" 
+                                    // placeholderSrc={"/images/viewers-disney.png"} 
+                                />
                                 </Link>
                             </Wrap>
                         )
